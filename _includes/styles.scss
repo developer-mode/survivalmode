@@ -3,6 +3,18 @@
 
 $grey-color:       #828282;
 
+.content a {
+    text-decoration: none;
+    color: #c00;
+    @include transition(background-color, .2s);
+    &:hover, &:focus, &:active{
+        background-color: aliceblue;
+    }
+    
+}
+
+
+
 .icon {
 
     > svg {
@@ -18,7 +30,7 @@ $grey-color:       #828282;
 }
 
 amp-img {
-  background-color: grey;
+//  background-color: grey;
 }
 
 .cf {
@@ -106,6 +118,15 @@ body {
     line-height: 50px;
     word-break: break-word;
     color: #333333;
+      
+      a{
+          color: inherit;
+          @include transition(color, .2s);
+          &:hover, &:focus, &:active{
+              background-color: inherit;
+              color: #777;
+          }
+      }
   }
   .blog-description {
     font-size: 28px;
