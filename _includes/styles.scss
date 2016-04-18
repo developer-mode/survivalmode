@@ -320,8 +320,8 @@ body {
       hyphens: auto;
     }
     a {
-      color: #333333;
-      text-decoration: underline;
+      color: inherit;
+     //  text-decoration: underline;
     }
     amp-img, amp-youtube {
       margin-top: 30px;
